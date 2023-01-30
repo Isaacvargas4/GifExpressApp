@@ -6,9 +6,8 @@ import { GifGrid } from './components/GifGrid'
 
 export const GifExpertApp = () => {
 
-    const animes = ['One Pounch']
 
-    const [Category, setCategory] = useState(animes)
+    const [Category, setCategory] = useState([])
 
     const setCategories = (newCategory)=>{
         const arrayLowerCase = Category.map(item=> item.toLowerCase())
@@ -33,52 +32,3 @@ export const GifExpertApp = () => {
     </>
   )
 }
-
-
-
-
-
-// import { useState } from "react"
-
-// export const GifExpertApp = () => {
-
-//     let animes = ['valorant', 'naruto']
-
-//     const [categories, setCategories] = useState(animes)
-
-//     const addCategory = ()=>{
-//         console.log('i am working')
-//         setCategories([...categories, 'fortnite'])
-//     }
-
-//   return (
-    
-//     <>
-//     {/* titulo */}
-//     <h1>Gif Expert App</h1>
-
-
-//     {/* Input */}
-
-
-//     {/* List of Gifs */}
-
-//     <button onClick={addCategory} >
-//         Add other category
-//     </button>
-
-//     <ol>
-
-//         {categories.map((category, index)=>{
-//             return <li key={index} > {category} </li>
-//         })}
-        
-//     </ol>
-
-
-//     {/* Gif Items */}
-
-
-//     </>
-//   )
-// }
